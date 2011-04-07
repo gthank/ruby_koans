@@ -88,7 +88,7 @@ the first solution:
     ./about_asserts.rb:10:in `test_assert_truth'
     path_to_enlightenment.rb:27
 
-We then open up the about_asserts.rb file and look at the first test:
+We then open up the about\_asserts.rb file and look at the first test:
 
     # We shall contemplate truth by testing reality, via asserts.
     def test_assert_truth
