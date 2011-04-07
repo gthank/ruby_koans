@@ -8,9 +8,9 @@ and do great things in the language.
 
 == The Structure
 
-The koans are broken out into areas by file, hashes are covered in about_hashes.rb,
-modules are introduced in about_modules.rb, etc.  They are presented in order in the
-path_to_enlightenment.rb file.
+The koans are broken out into areas by file, hashes are covered in +about_hashes.rb+,
+modules are introduced in +about_modules.rb+, etc.  They are presented in order in the
++path_to_enlightenment.rb+ file.
 
 Each koan builds up your knowledge of Ruby and builds upon itself.  It will stop at
 the first place you need to correct.
@@ -88,7 +88,8 @@ the first solution:
     ./about_asserts.rb:10:in `test_assert_truth'
     path_to_enlightenment.rb:27
 
-We then open up the about\_asserts.rb file and look at the first test:
+
+We then open up the +about_asserts.rb+ file and look at the first test:
 
     # We shall contemplate truth by testing reality, via asserts.
     def test_assert_truth
