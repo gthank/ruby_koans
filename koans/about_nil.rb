@@ -33,6 +33,12 @@ class AboutNil < EdgeCase::Koan
     # or
     #    obj == nil
     # Why?
+    #
+    # I prefer the aesthetics of .nil? From an efficiency perspective, it's hard
+    # to imagine it making a difference. Apparently == is implemented as a
+    # method, so the function call overhead should be the same between .nil? and
+    # == but the implementation of .nil? can be a simple false for every object
+    # but nil instead of an identity comparison, so I suppose it is
+    # infinitessimally more efficient.
   end
-
 end
