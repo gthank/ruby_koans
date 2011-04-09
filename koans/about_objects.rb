@@ -2,11 +2,11 @@ require File.expand_path(File.dirname(__FILE__) + '/edgecase')
 
 class AboutObjects < EdgeCase::Koan
   def test_everything_is_an_object
-    assert_equal __, 1.is_a?(Object)
-    assert_equal __, 1.5.is_a?(Object)
-    assert_equal __, "string".is_a?(Object)
-    assert_equal __, nil.is_a?(Object)
-    assert_equal __, Object.is_a?(Object)
+    assert 1.is_a?(Object)
+    assert 1.5.is_a?(Object)
+    assert "string".is_a?(Object)
+    assert nil.is_a?(Object)
+    assert Object.is_a?(Object)
   end
 
   def test_objects_can_be_converted_to_strings
