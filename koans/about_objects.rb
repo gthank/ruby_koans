@@ -51,7 +51,7 @@ class AboutObjects < EdgeCase::Koan
     obj = Object.new
     copy = obj.clone
 
-    assert_equal __, obj           != copy
-    assert_equal __, obj.object_id != copy.object_id
+    assert obj != copy
+    assert obj.object_id != copy.object_id
   end
 end
