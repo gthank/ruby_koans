@@ -15,10 +15,12 @@ class AboutArrays < EdgeCase::Koan
     assert_equal [1], array
 
     array[1] = 2
-    assert_equal [1, __], array
+    assert_equal [1, 2], array
 
     array << 333
-    assert_equal __, array
+    # Now *THAT* is a funky bit of syntax. It makes sense after I think
+    # about it for a minute, but it totally threw me for a loop at first.
+    assert_equal [1, 2, 333], array
   end
 
   def test_accessing_array_elements
