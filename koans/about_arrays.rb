@@ -37,13 +37,20 @@ class AboutArrays < EdgeCase::Koan
   def test_slicing_arrays
     array = [:peanut, :butter, :and, :jelly]
 
-    assert_equal __, array[0,1]
-    assert_equal __, array[0,2]
-    assert_equal __, array[2,2]
-    assert_equal __, array[2,20]
-    assert_equal __, array[4,0]
-    assert_equal __, array[4,100]
-    assert_equal __, array[5,0]
+    # Hmm… this is not a friendly syntax. It's like trying to figure
+    # out which arguments to pass to substr vs. substring in
+    # JavaScript—I always wind up looking it up in the docs.
+    assert_equal [:peanut], array[0,1]
+    assert_equal [:peanut, :butter], array[0,2]
+    assert_equal [:and, :jelly], array[2,2]
+    assert_equal [:and, :jelly], array[2,20]
+    # And this where it gets WEIRD. I just looked this up on StackOverflow
+    # (http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fro)
+    # and this can't be described as anything but a bug based on the answers
+    # there. This should *clearly* be `nil`, not `[]`.
+    assert_equal [], array[4,0]
+    assert_equal [], array[4,100]
+    assert_equal nil, array[5,0]
   end
 
   def test_arrays_and_ranges
