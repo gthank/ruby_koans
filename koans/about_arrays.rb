@@ -44,10 +44,11 @@ class AboutArrays < EdgeCase::Koan
     assert_equal [:peanut, :butter], array[0,2]
     assert_equal [:and, :jelly], array[2,2]
     assert_equal [:and, :jelly], array[2,20]
-    # And this where it gets WEIRD. I just looked this up on StackOverflow
-    # (http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fro)
-    # and this can't be described as anything but a bug based on the answers
-    # there. This should *clearly* be `nil`, not `[]`.
+    # OK, see http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fro/3568281#3568281
+    # for how Ruby treats array slicing. I have to admit, this completely made no
+    # sense to me at first. Now that I understand it, I'm still not really a fan
+    # just because it's so different from how most languages do it, and I don't
+    # like the same syntax having a different model driving the behavior.
     assert_equal [], array[4,0]
     assert_equal [], array[4,100]
     assert_equal nil, array[5,0]
