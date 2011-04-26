@@ -64,9 +64,15 @@ class AboutArrays < EdgeCase::Koan
   def test_slicing_with_ranges
     array = [:peanut, :butter, :and, :jelly]
 
-    assert_equal __, array[0..2]
-    assert_equal __, array[0...2]
-    assert_equal __, array[2..-1]
+    # .. is a range operator; it generates a range that is inclusive on both
+    # ends, e.g., [low, high]
+    assert_equal [:peanut, :butter, :and], array[0..2]
+    # ... is a range operator; it generats a range that is exclusive on the top
+    # end, e.g., [low, high)
+    assert_equal [:peanut, :butter], array[0...2]
+    # Another construction that makes your life easier on corner cases, but will
+    # also inevitably get misused during your journey to enlightenment.
+    assert_equal [:and, :jelly], array[2..-1]
   end
 
   def test_pushing_and_popping_arrays
