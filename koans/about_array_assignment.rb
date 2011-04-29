@@ -47,7 +47,7 @@ class AboutArrayAssignment < EdgeCase::Koan
     first_name = "Roy"
     last_name = "Rob"
     first_name, last_name = last_name, first_name
-    assert_equal __, first_name
-    assert_equal __, last_name
+    assert_equal "Rob", first_name
+    assert_equal "Roy", last_name
   end
 end
