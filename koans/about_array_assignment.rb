@@ -13,9 +13,11 @@ class AboutArrayAssignment < EdgeCase::Koan
   end
 
   def test_parallel_assignments_with_extra_values
+    # This is probably the best way for this to work, but I wish I could get a
+    # warning about a mismatch in the number of elements, or something.
     first_name, last_name = ["John", "Smith", "III"]
-    assert_equal __, first_name
-    assert_equal __, last_name
+    assert_equal "John", first_name
+    assert_equal "Smith", last_name
   end
 
   def test_parallel_assignments_with_splat_operator
