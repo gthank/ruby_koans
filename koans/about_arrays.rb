@@ -90,11 +90,11 @@ class AboutArrays < EdgeCase::Koan
     array = [1,2]
     array.unshift(:first)
 
-    assert_equal __, array
+    assert_equal [:first,1,2], array
 
     shifted_value = array.shift
-    assert_equal __, shifted_value
-    assert_equal __, array
+    assert_equal :first, shifted_value
+    assert_equal [1,2], array
   end
 
 end
