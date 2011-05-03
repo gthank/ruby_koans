@@ -26,9 +26,15 @@ class AboutHashes < EdgeCase::Koan
 
     expected = { :one => "eins", :two => "dos" }
     assert expected == hash
+    # Could replace the two lines above with the one below:
+    # assert({ :one => "eins", :two => "dos" } == hash)
 
     # Bonus Question: Why was "expected" broken out into a variable
     # rather than used as a literal?
+
+    # Bonus Answer: Because apparently, when you aren't using parens, using { }
+    # gets parsed as trying to create a block argument instead of as a Hash
+    # literal.
   end
 
   def test_hash_is_unordered
