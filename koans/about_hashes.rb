@@ -15,9 +15,9 @@ class AboutHashes < EdgeCase::Koan
 
   def test_accessing_hashes
     hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash[:one]
-    assert_equal __, hash[:two]
-    assert_equal __, hash[:doesnt_exist]
+    assert_equal "uno", hash[:one]
+    assert_equal "dos", hash[:two]
+    assert_equal nil, hash[:doesnt_exist]
   end
 
   def test_changing_hashes
