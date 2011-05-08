@@ -92,12 +92,15 @@ EOS
     hi = original_string
     there = "World"
     hi << there
-    assert_equal __, original_string
+    assert_equal "Hello, World", original_string
 
     # THINK ABOUT IT:
     #
     # Ruby programmers tend to favor the shovel operator (<<) over the
     # plus equals operator (+=) when building up strings.  Why?
+    #
+    # I'm guessing it's because << doesn't incur any overhead from object
+    # allocation/copying, whereas += does.
   end
 
   def test_double_quoted_string_interpret_escape_characters
