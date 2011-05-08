@@ -40,7 +40,7 @@ class AboutStrings < EdgeCase::Koan
 It was the best of times,
 It was the worst of times.
 }
-    assert_equal __, long_string.size
+    assert_equal 54, long_string.size
   end
 
   def test_here_documents_can_also_handle_multiple_lines
