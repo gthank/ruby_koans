@@ -169,7 +169,7 @@ EOS
   def test_strings_can_be_split
     string = "Sausage Egg Cheese"
     words = string.split
-    assert_equal [__, __, __], words
+    assert_equal ["Sausage", "Egg", "Cheese"], words
   end
 
   def test_strings_can_be_split_with_different_patterns
