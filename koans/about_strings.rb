@@ -144,9 +144,10 @@ EOS
 
   def test_you_can_get_a_single_character_from_a_string
     string = "Bacon, lettuce and tomato"
-    assert_equal __, string[1]
+    assert_equal 97, string[1]
 
     # Surprised?
+    # YES! **WHY** would you do that?
   end
 
   in_ruby_version("1.8") do
