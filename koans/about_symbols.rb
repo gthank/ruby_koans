@@ -49,7 +49,7 @@ class AboutSymbols < EdgeCase::Koan
 
   def test_symbols_can_be_made_from_strings
     string = "catsAndDogs"
-    assert_equal __, string.to_sym
+    assert_equal :catsAndDogs, string.to_sym
   end
 
   def test_symbols_with_spaces_can_be_built
