@@ -43,7 +43,7 @@ class AboutSymbols < EdgeCase::Koan
     def test_constants_become_symbols
       all_symbols = Symbol.all_symbols
 
-      assert_equal __, all_symbols.include?(__)
+      assert_equal true, all_symbols.include?(:RubyConstant)
     end
   end
 
