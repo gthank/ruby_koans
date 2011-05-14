@@ -69,7 +69,7 @@ class AboutSymbols < EdgeCase::Koan
     symbol = :cats
     string = "It is raining #{symbol} and dogs."
 
-    assert_equal __, string
+    assert_equal "It is raining cats and dogs.", string
   end
 
   def test_symbols_are_not_strings
