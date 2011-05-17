@@ -11,7 +11,7 @@ class AboutRegularExpressions < EdgeCase::Koan
   end
 
   def test_a_failed_match_returns_nil
-    assert_equal __, "some matching content"[/missing/]
+    assert_equal nil, "some matching content"[/missing/]
   end
 
   # ------------------------------------------------------------------
