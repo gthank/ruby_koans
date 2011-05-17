@@ -102,4 +102,10 @@ class AboutSymbols < EdgeCase::Koan
   # THINK ABOUT IT:
   #
   # Why is it not a good idea to dynamically create a lot of symbols?
+  #
+  # Answer: Due to their implementation, symbols can *never* be
+  #         garbage-collected. That means once you allocate memory
+  #         for a symbol, you can never get it back, so you don't
+  #         want to create them all willy-nilly.
+
 end
