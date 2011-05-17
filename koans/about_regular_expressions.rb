@@ -22,7 +22,7 @@ class AboutRegularExpressions < EdgeCase::Koan
   end
 
   def test_plus_means_one_or_more
-    assert_equal __, "abbcccddddeeeee"[/bc+/]
+    assert_equal "bccc", "abbcccddddeeeee"[/bc+/]
   end
 
   def test_asterisk_means_zero_or_more
