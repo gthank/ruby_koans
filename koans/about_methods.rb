@@ -112,7 +112,7 @@ class AboutMethods < EdgeCase::Koan
   private :my_private_method
 
   def test_calling_private_methods_without_receiver
-    assert_equal __, my_private_method
+    assert_equal "a secret", my_private_method
   end
 
   def test_calling_private_methods_with_an_explicit_receiver
