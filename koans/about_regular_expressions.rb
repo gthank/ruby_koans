@@ -105,7 +105,7 @@ class AboutRegularExpressions < EdgeCase::Koan
   end
 
   def test_caret_anchors_to_the_start_of_lines
-    assert_equal __, "num 42\n2 lines"[/^\d+/]
+    assert_equal "2", "num 42\n2 lines"[/^\d+/]
   end
 
   def test_dollar_sign_anchors_to_the_end_of_lines
