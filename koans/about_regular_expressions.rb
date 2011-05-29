@@ -130,9 +130,9 @@ class AboutRegularExpressions < EdgeCase::Koan
   end
 
   def test_variables_can_also_be_used_to_access_captures
-    assert_equal __, "Name:  Gray, James"[/(\w+), (\w+)/]
-    assert_equal __, $1
-    assert_equal __, $2
+    assert_equal "Gray, James", "Name:  Gray, James"[/(\w+), (\w+)/]
+    assert_equal "Gray", $1
+    assert_equal "James", $2
   end
 
   # ------------------------------------------------------------------
