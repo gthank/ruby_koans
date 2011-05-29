@@ -143,7 +143,7 @@ class AboutMethods < EdgeCase::Koan
 
   def test_calling_private_methods_in_other_objects
     rover = Dog.new
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       rover.tail
     end
   end
