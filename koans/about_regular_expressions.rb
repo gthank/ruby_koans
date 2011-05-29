@@ -109,7 +109,7 @@ class AboutRegularExpressions < EdgeCase::Koan
   end
 
   def test_dollar_sign_anchors_to_the_end_of_lines
-    assert_equal __, "2 lines\nnum 42"[/\d+$/]
+    assert_equal "42", "2 lines\nnum 42"[/\d+$/]
   end
 
   def test_slash_b_anchors_to_a_word_boundary
