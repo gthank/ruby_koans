@@ -94,8 +94,8 @@ class AboutRegularExpressions < EdgeCase::Koan
   # ------------------------------------------------------------------
 
   def test_slash_a_anchors_to_the_start_of_the_string
-    assert_equal __, "start end"[/\Astart/]
-    assert_equal __, "start end"[/\Aend/]
+    assert_equal "start", "start end"[/\Astart/]
+    assert_equal nil, "start end"[/\Aend/]
   end
 
   def test_slash_z_anchors_to_the_end_of_the_string
