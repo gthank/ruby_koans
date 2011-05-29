@@ -33,6 +33,8 @@ class AboutRegularExpressions < EdgeCase::Koan
     # THINK ABOUT IT:
     #
     # When would * fail to match?
+    #
+    # Apparently, *something* else (either before or after the `*`) has to match.
   end
 
   # THINK ABOUT IT:
@@ -40,6 +42,8 @@ class AboutRegularExpressions < EdgeCase::Koan
   # We say that the repetition operators above are "greedy."
   #
   # Why?
+  #
+  # They match as much of the string as possible while retaining the match.
 
   # ------------------------------------------------------------------
 
