@@ -154,7 +154,7 @@ class AboutRegularExpressions < EdgeCase::Koan
   # ------------------------------------------------------------------
 
   def test_scan_is_like_find_all
-    assert_equal __, "one two-three".scan(/\w+/)
+    assert_equal ["one", "two", "three"], "one two-three".scan(/\w+/)
   end
 
   def test_sub_is_like_find_and_replace
