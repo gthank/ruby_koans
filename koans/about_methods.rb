@@ -116,10 +116,10 @@ class AboutMethods < EdgeCase::Koan
   end
 
   def test_calling_private_methods_with_an_explicit_receiver
-    exception = assert_raise(___) do
+    exception = assert_raise(NoMethodError) do
       self.my_private_method
     end
-    assert_match /__/, exception.message
+    assert_match /my_private_method/, exception.message
   end
 
   # ------------------------------------------------------------------
