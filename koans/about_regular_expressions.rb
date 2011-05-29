@@ -34,7 +34,8 @@ class AboutRegularExpressions < EdgeCase::Koan
     #
     # When would * fail to match?
     #
-    # Apparently, *something* else (either before or after the `*`) has to match.
+    # I can't think of a case where it won't match, but that might just be a
+    # failure of my imagination.
   end
 
   # THINK ABOUT IT:
