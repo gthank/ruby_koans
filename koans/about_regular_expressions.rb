@@ -147,6 +147,9 @@ class AboutRegularExpressions < EdgeCase::Koan
   # THINK ABOUT IT:
   #
   # Explain the difference between a character class ([...]) and alternation (|).
+  #
+  # You use character classes to match single characters, but alternation
+  # matches longer strings of characters.
 
   # ------------------------------------------------------------------
 
