@@ -12,7 +12,7 @@ class AboutMethods < EdgeCase::Koan
 
   def test_calling_global_methods_without_parentheses
     result = my_global_method 2, 3
-    assert_equal __, result
+    assert_equal 5, result
   end
 
   # (NOTE: We are Using eval below because the example code is
