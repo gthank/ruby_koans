@@ -7,7 +7,7 @@ class AboutConstants < EdgeCase::Koan
   C = "nested"
 
   def test_nested_constants_may_also_be_referenced_with_relative_paths
-    assert_equal __, C
+    assert_equal "nested", C
   end
 
   def test_top_level_constants_are_referenced_by_double_colons
