@@ -111,7 +111,7 @@ class AboutControlStatements < EdgeCase::Koan
       next if (i % 2) == 0
       result << i 
     end
-    assert_equal __, result
+    assert_equal [1,3,5,7,9], result
   end
 
   def test_for_statement
