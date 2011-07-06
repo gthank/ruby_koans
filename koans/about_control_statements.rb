@@ -8,7 +8,7 @@ class AboutControlStatements < EdgeCase::Koan
     else
       result = :false_value
     end
-    assert_equal __, result
+    assert_equal :true_value, result
   end
 
   def test_if_then_statements
