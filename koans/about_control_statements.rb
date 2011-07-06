@@ -62,7 +62,7 @@ class AboutControlStatements < EdgeCase::Koan
     unless false
       result = :false_value
     end
-    assert_equal __, result
+    assert_equal :false_value, result
   end
 
   def test_unless_statement_modifier
