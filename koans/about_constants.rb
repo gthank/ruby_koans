@@ -35,7 +35,7 @@ class AboutConstants < EdgeCase::Koan
   end
 
   def test_nested_classes_inherit_constants_from_enclosing_classes
-    assert_equal __, Animal::NestedAnimal.new.legs_in_nested_animal
+    assert_equal 4, Animal::NestedAnimal.new.legs_in_nested_animal
   end
 
   # ------------------------------------------------------------------
