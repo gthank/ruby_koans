@@ -69,7 +69,7 @@ class AboutControlStatements < EdgeCase::Koan
     result = :default_value
     result = :false_value unless false
 
-    assert_equal __, result
+    assert_equal :false_value, result
   end
 
   def test_while_statement
