@@ -85,4 +85,7 @@ class AboutConstants < EdgeCase::Koan
   # QUESTION: Now Which has precedence: The constant in the lexical
   # scope, or the constant from the inheritance heirarachy?  Why is it
   # different than the previous answer?
+  # ANSWER: I think this is a bit of a trick question: if you look at the
+  # explicitly scoped definition, there is no definition of `LEGS` in its
+  # lexical scope, so the inherited constant "wins".
 end
