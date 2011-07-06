@@ -15,8 +15,8 @@ class AboutConstants < EdgeCase::Koan
   end
 
   def test_nested_constants_are_referenced_by_their_complete_path
-    assert_equal __, AboutConstants::C
-    assert_equal __, ::AboutConstants::C
+    assert_equal "nested", AboutConstants::C
+    assert_equal "nested", ::AboutConstants::C
   end
 
   # ------------------------------------------------------------------
