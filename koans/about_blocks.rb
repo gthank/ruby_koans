@@ -40,7 +40,7 @@ class AboutBlocks < EdgeCase::Koan
   def test_methods_can_call_yield_many_times
     result = []
     many_yields { |item| result << item }
-    assert_equal __, result
+    assert_equal [:peanut, :butter, :and, :jelly], result
   end
 
   # ------------------------------------------------------------------
