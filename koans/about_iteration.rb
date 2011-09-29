@@ -100,6 +100,8 @@ class AboutIteration < EdgeCase::Koan
   #   file = File.open(filename)
   #   # code to read 'file'
   #
+  # My Answer (unresearched): Because it will automatically close the file.
+  #
   # When you get to the "AboutSandwichCode" koan, recheck your answer.
 
 end
