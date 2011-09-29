@@ -19,7 +19,7 @@ def triangle(a, b, c)
   end
 
   if a <= 0 || b <= 0 || c <= 0
-    raise TriangleError, "The length of each triangle's side must be a natural number."
+    raise TriangleError, "The length of each triangle's side must be a positive number."
   end
 
   # Use a FP number so we don't accidentally round down to 0.
