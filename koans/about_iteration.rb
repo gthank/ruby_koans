@@ -21,7 +21,7 @@ class AboutIteration < EdgeCase::Koan
     array.each { |item|
       sum += item
     }
-    assert_equal __, sum
+    assert_equal 6, sum
   end
 
   def test_break_works_with_each_style_iterations
