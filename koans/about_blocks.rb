@@ -63,7 +63,7 @@ class AboutBlocks < EdgeCase::Koan
   def test_block_can_affect_variables_in_the_code_where_they_are_created
     value = :initial_value
     method_with_block { value = :modified_in_a_block }
-    assert_equal __, value
+    assert_equal :modified_in_a_block, value
   end
 
   def test_blocks_can_be_assigned_to_variables_and_called_explicitly
