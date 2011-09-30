@@ -6,7 +6,7 @@ class AboutClasses < EdgeCase::Koan
 
   def test_instances_of_classes_can_be_created_with_new
     fido = Dog.new
-    assert_equal __, fido.class
+    assert_equal Dog, fido.class
   end
 
   # ------------------------------------------------------------------
