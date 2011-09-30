@@ -101,7 +101,7 @@ class AboutClasses < EdgeCase::Koan
     fido = Dog5.new
 
     fido.name = "Fido"
-    assert_equal __, fido.name
+    assert_equal "Fido", fido.name
   end
 
   # ------------------------------------------------------------------
