@@ -147,7 +147,7 @@ class AboutClasses < EdgeCase::Koan
     end
 
     def to_s
-      __
+      @name
     end
 
     def inspect
@@ -164,17 +164,17 @@ class AboutClasses < EdgeCase::Koan
 
   def test_to_s_provides_a_string_version_of_the_object
     fido = Dog7.new("Fido")
-    assert_equal __, fido.to_s
+    assert_equal "Fido", fido.to_s
   end
 
   def test_to_s_is_used_in_string_interpolation
     fido = Dog7.new("Fido")
-    assert_equal __, "My dog is #{fido}"
+    assert_equal "My dog is Fido", "My dog is #{fido}"
   end
 
   def test_inspect_provides_a_more_complete_string_version
     fido = Dog7.new("Fido")
-    assert_equal __, fido.inspect
+    assert_equal "<Dog name 'Fido'>", fido.inspect
   end
 
   def test_all_objects_support_to_s_and_inspect
