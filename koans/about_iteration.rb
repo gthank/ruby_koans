@@ -103,5 +103,7 @@ class AboutIteration < EdgeCase::Koan
   # My Answer (unresearched): Because it will automatically close the file.
   #
   # When you get to the "AboutSandwichCode" koan, recheck your answer.
+  #
+  # My Updated Answer: Because it automatically closes the file :-)
 
 end
