@@ -29,11 +29,11 @@ class AboutClasses < EdgeCase::Koan
     fido = Dog2.new
     fido.set_name("Fido")
 
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       fido.name
     end
 
-    assert_raise(___) do
+    assert_raise(SyntaxError) do
       eval "fido.@name"
       # NOTE: Using eval because the above line is a syntax error.
     end
