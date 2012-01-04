@@ -59,11 +59,11 @@ class AboutMessagePassing < EdgeCase::Koan
   def test_sending_a_message_with_arguments
     mc = MessageCatcher.new
 
-    assert_equal __, mc.add_a_payload
-    assert_equal __, mc.send(:add_a_payload)
+    assert_equal [], mc.add_a_payload
+    assert_equal [], mc.send(:add_a_payload)
 
-    assert_equal __, mc.add_a_payload(3, 4, nil, 6)
-    assert_equal __, mc.send(:add_a_payload, 3, 4, nil, 6)
+    assert_equal [3, 4, nil, 6], mc.add_a_payload(3, 4, nil, 6)
+    assert_equal [3, 4, nil, 6], mc.send(:add_a_payload, 3, 4, nil, 6)
   end
 
   # ------------------------------------------------------------------
