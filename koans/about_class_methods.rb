@@ -115,7 +115,7 @@ class AboutClassMethods < EdgeCase::Koan
                                end
 
   def test_self_while_inside_class_is_class_object_not_instance
-    assert_equal __, Dog == SelfInsideOfClassStatement
+    assert_equal true, Dog == SelfInsideOfClassStatement
   end
 
   # ------------------------------------------------------------------
