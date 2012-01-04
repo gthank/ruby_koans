@@ -81,8 +81,8 @@ class AboutClassMethods < EdgeCase::Koan
   def test_classes_and_instances_do_not_share_instance_variables
     fido = Dog.new
     fido.name = "Fido"
-    assert_equal __, fido.name
-    assert_equal __, Dog.name
+    assert_equal "Fido", fido.name
+    assert_equal nil, Dog.name
   end
 
   # ------------------------------------------------------------------
