@@ -36,6 +36,9 @@ class AboutMessagePassing < EdgeCase::Koan
     # THINK ABOUT IT:
     #
     # Why does Ruby provide both send and __send__ ?
+    #
+    # A: My guess is so you can define your own `send` method that does
+    #    something appropriate for your problem space.
   end
 
   def test_classes_can_be_asked_if_they_know_how_to_respond
