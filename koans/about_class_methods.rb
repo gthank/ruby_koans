@@ -169,7 +169,7 @@ class AboutClassMethods < EdgeCase::Koan
 
   def test_heres_an_easy_way_to_call_class_methods_from_instance_methods
     fido = Dog.new
-    assert_equal __, fido.class.another_class_method
+    assert_equal :still_another_way, fido.class.another_class_method
   end
 
 end
