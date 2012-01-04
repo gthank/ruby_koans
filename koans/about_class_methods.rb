@@ -158,7 +158,12 @@ class AboutClassMethods < EdgeCase::Koan
   #   end
   #
   # Which do you prefer and why?
+  # A: I prefer the `self.method` approach. I like the bigger.smaller aspect of
+  #    it, whereas the `class << self` approach appears to be totally random. At
+  #    a guess, it is referencing an idiom from a language I don't know. 
   # Are there times you might prefer one over the other?
+  # A: While there are probably times the `class << self` approach would be
+  #    preferable, I can't think of any off the top of my head.
 
   # ------------------------------------------------------------------
 
