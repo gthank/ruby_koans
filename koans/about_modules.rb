@@ -12,7 +12,7 @@ class AboutModules < EdgeCase::Koan
   end
 
   def test_cant_instantiate_modules
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       Nameable.new
     end
   end
