@@ -59,7 +59,7 @@ class AboutClassMethods < EdgeCase::Koan
   end
 
   def test_since_classes_are_objects_you_can_define_singleton_methods_on_them_too
-    assert_equal __, Dog2.wag
+    assert_equal :class_level_wag, Dog2.wag
   end
 
   def test_class_methods_are_independent_of_instance_methods
