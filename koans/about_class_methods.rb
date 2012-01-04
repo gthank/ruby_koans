@@ -41,7 +41,7 @@ class AboutClassMethods < EdgeCase::Koan
       :fidos_wag
     end
 
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       rover.wag
     end
   end
