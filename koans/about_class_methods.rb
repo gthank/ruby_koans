@@ -141,7 +141,7 @@ class AboutClassMethods < EdgeCase::Koan
   end
 
   def test_heres_still_another_way_to_write_class_methods
-    assert_equal __, Dog.another_class_method
+    assert_equal :still_another_way, Dog.another_class_method
   end
 
   # THINK ABOUT IT:
