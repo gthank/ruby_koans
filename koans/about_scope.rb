@@ -39,15 +39,15 @@ class AboutScope < EdgeCase::Koan
   end
 
   def test_bare_bones_class_names_assume_the_current_scope
-    assert_equal __, AboutScope::String == String
+    assert_equal true, AboutScope::String == String
   end
 
   def test_nested_string_is_not_the_same_as_the_system_string
-    assert_equal __, String == "HI".class
+    assert_equal false, String == "HI".class
   end
 
   def test_use_the_prefix_scope_operator_to_force_the_global_scope
-    assert_equal __, ::String == "HI".class
+    assert_equal true, ::String == "HI".class
   end
 
   # ------------------------------------------------------------------
