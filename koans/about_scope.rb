@@ -18,7 +18,7 @@ class AboutScope < EdgeCase::Koan
   end
 
   def test_dog_is_not_available_in_the_current_scope
-    assert_raise(___) do
+    assert_raise(NameError) do
       fido = Dog.new
     end
   end
