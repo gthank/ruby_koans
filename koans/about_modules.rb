@@ -51,9 +51,9 @@ class AboutModules < EdgeCase::Koan
 
   def test_module_methods_can_affect_instance_variables_in_the_object
     fido = Dog.new
-    assert_equal __, fido.name
+    assert_equal "Fido", fido.name
     fido.set_name("Rover")
-    assert_equal __, fido.name
+    assert_equal "Rover", fido.name
   end
 
   def test_classes_can_override_module_methods
