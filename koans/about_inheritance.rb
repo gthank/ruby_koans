@@ -64,7 +64,7 @@ class AboutInheritance < EdgeCase::Koan
 
   def test_subclasses_can_invoke_parent_behavior_via_super
     ralph = BullDog.new("Ralph")
-    assert_equal __, ralph.bark
+    assert_equal "WOOF, GROWL", ralph.bark
   end
 
   # ------------------------------------------------------------------
