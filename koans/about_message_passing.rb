@@ -104,6 +104,9 @@ class AboutMessagePassing < EdgeCase::Koan
     #
     # Thanks.  We now return you to your regularly schedule Ruby
     # Koans.
+    #
+    # A: You could do something clever like define it on the fly, all
+    #    Rails-style, or you could log it, or any number of things.
   end
 
   # ------------------------------------------------------------------
