@@ -94,7 +94,7 @@ class AboutClassMethods < EdgeCase::Koan
   end
 
   def test_you_can_define_class_methods_inside_the_class
-    assert_equal __, Dog.a_class_method
+    assert_equal :dogs_class_method, Dog.a_class_method
   end
       
 
