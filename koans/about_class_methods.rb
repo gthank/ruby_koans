@@ -10,7 +10,7 @@ class AboutClassMethods < EdgeCase::Koan
   end
 
   def test_classes_are_classes
-    assert_equal __, Dog.is_a?(Class)
+    assert_equal true, Dog.is_a?(Class)
   end
 
   def test_classes_are_objects_too
